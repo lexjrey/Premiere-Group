@@ -32,14 +32,13 @@ stack<int> number;
 
 
 
+
 string operation;
 int operand = 0;
 
 
 	while (cin) {
-
-			cin >> ws; // eat any whitespace
-
+			cin>> ws;
 			int c = cin.peek();
 			
 			if(!cin) die();
@@ -67,7 +66,7 @@ int operand = 0;
 					number.push(operand);
 				cout<<"number stack top is " <<number.top()<<endl;
 			}
-		break;	
+		
 		}
 //at this point all of the input of that line is on the stacks
 cout<<"-------------------------------------------"<<endl;
@@ -86,7 +85,6 @@ number.push(it);
 
 cout<<number.top()<<endl;
 	}
-
 
 
 
